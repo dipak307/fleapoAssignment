@@ -1,3 +1,2 @@
 # fleapoAssignment
-
-  netlify link :- fleapodipakassignment.netlify.app
+netlify link:- fleapodipakassignment.netlify.app
