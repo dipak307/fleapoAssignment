@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.slide{
+    height: 50%;
+    width: 200px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgb(191, 97, 97);
+    transition: 0.5s ease;
+    transform: translateY(-1000px);
+    
+}
+h1{
+    color:#8000ff;
+    font-weight: 800;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 40px;
+    pointer-events: none;
+}
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    color: #011a41;
+    font-weight: 500;
+    padding: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+ul li a i{
+    width: 40px;
+    text-align: center;
+    
+}
+
+input{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+
+.toggle{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    right: 15px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0,0,0.3);
+}
+
+.toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: #8000ff;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+.toggle .top_line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.toggle .middle_line{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.toggle .bottom_line{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.toggle-checkbox:checked + .toggle-label .top_line {
+    left:2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg) ;
+}
+
+.toggle-checkbox:checked + .toggle-label .bottom_line {
+    left:2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg) ;
+}
+
+.toggle-checkbox:checked + .toggle-label .middle_line { 
+    opacity: 0;
+    transform: translateX(20px); /* Adjust as needed */
+}
+.toggle-checkbox:checked + .toggle-label + .slide {
+    transform: translateX(0); /* Adjust distance as needed */
+    
+}
+
