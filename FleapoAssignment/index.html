@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style1.css"/>
 </head>
 <body>
     <header>
@@ -15,7 +16,46 @@
             <p>Ottieni Subito Uno Sconto Del 10% Iscriviti Alla Newsletter</p>
             <p>Informazioni Di Consegna</p>
         </div>
-        <nav class="navbar">
+       
+        <div class="mobile-sidebar" >
+            <div class="logo" style="margin-bottom: 10px;"> <img src="footerlogo.jpg" alt="teddy" style="width: 50px; height: 50px;" /> Teddy Shop</div>
+         
+            <lable>
+                <input type="checkbox" id="toggleInput" class="toggle-checkbox">
+                <label for="toggleInput" class="toggle-label">
+                    <div class="toggle">
+                        <span class="top_line common"></span>
+                        <span class="middle_line common"></span>
+                        <span class="bottom_line common"></span>
+                       </div>
+                   </label>
+                   
+                   <div class="slide">
+               <h1>Menu</h1>
+               <ul>
+                   <li><a href="#">Home</a></li>
+                   <li>
+                       <label>Categorie</label>
+                       <select>
+                           <option></option>
+                           <option>black</option>
+                           <option>white</option>
+                       </select>
+                   </li>
+                   <li><a href="#">Novità</a></li>
+                   <li><a href="#">Marchi</a></li>
+                   <li><a href="#">Carte regalo</a></li>
+                   <li><a href="#">Chi siamo</a></li>
+                   <li><a href="#"><i class="fa fa-search"></i></a></li>
+                 <li>  <a href="#"><i class="fa fa-heart" style="color: red;"></i></a></li>
+                  <li> <a href="#"><i class="fa fa-user"></i></a></li>
+               <button class="signup-btn" style="background-color: red; color: wheat;">Iscriviti ora</button>
+               </ul>
+           </div>
+       </lable>
+   </div>
+
+         <nav class="navbar">
             <div class="logo" style="margin-bottom: 10px;"> <img src="footerlogo.jpg" alt="teddy" style="width: 50px; height: 50px;" /> Teddy Shop</div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
@@ -30,7 +70,6 @@
                 <li><a href="#">Marchi</a></li>
                 <li><a href="#">Carte regalo</a></li>
                 <li><a href="#">Chi siamo</a></li>
-                <div class="cross-icons">&#10005;</div>
             </ul>
             <div class="nav-icons">
                 <a href="#"><i class="fa fa-search"></i></a>
@@ -39,9 +78,9 @@
 
             </div>
             <button class="signup-btn">Iscriviti ora</button>
-            <div class="menu-iconss" id="menu-icon">&#9776;</div>
             
-        </nav>
+        </nav> 
+        
     </header>
     <main>
         <section class="hero-section">
@@ -69,7 +108,7 @@
             </div>
         </section>
         <section class="featured-products">
-            <h2 style="font-style: italic; font-weight: 100; border: 3px solid rgb(177, 180, 118); display: inline-block; padding: 5px; border-radius: 15px;">Acquista Per La Primavera</h2>
+            <h2 style="font-style: italic; font-weight: 500; border: 3px solid rgb(177, 180, 118); display: inline-block; padding: 5px; border-radius: 15px;">Acquista Per La Primavera</h2>
             <div class="product-list">
                 <div class="product-card">
                     <img src="teddy.jpg" alt="Teddy">
@@ -95,44 +134,54 @@
             <button class="shop-now-btn">Esplora adesso</button>
         </section>
         <section class="services">
-            <h2 style="font-style: italic; font-weight: 100; border: 2px solid rgb(224, 228, 108); display: inline-block; padding: 5px; border-radius: 15px;">Ecco Cosa Possiamo Fare Per Te</h2>
+            <h2 style="font-style: italic; font-weight: 500; border: 2px solid rgb(224, 228, 108); display: inline-block; padding: 5px; border-radius: 15px;">Ecco Cosa Possiamo Fare Per Te</h2>
             <div class="service-list">
                 <div class="service-slider">
                     <div class="service-card" style="border: 2px solid rgb(224, 228, 108); display: inline-block; padding: 5px; border-radius: 15px;">
+                        <i class="fas fa-truck"></i>
                         <h3>Spedizioni sicure</h3>
                         <p>Offriamo  arrivi slklkksd lskkldkklskdkllks kdklkllkeklioeoiwkeoio  a destinazione in perfette condizioni.</p>
                     </div>
                     <div class="service-card" style="border: 2px solid rgb(224, 228, 108); display: inline-block; padding: 5px; border-radius: 15px;">
+                       
+            <i class="fas fa-medal"></i>
                         <h3>Materiali di qualità</h3>
                         <p>Siamo impegnati a utilizzare  peluche, per garantirti un prodotto che duri nel tempo.</p>
                     </div>
                     <div class="service-card" style="border: 2px solid rgb(224, 228, 108); display: inline-block; padding: 5px; border-radius: 15px;">
+                   <i class="fas fa-crown"></i>
                         <h3>Servizio eccellente</h3>
                         <p>La nostra missione è darti risolvendo qualsiasi problema.</p>
                     </div>
                     <div class="service-card" style="border: 2px solid rgb(224, 228, 108); display: inline-block; padding: 5px; border-radius: 15px;">
+                        <i class="fas fa-truck"></i>
                         <h3>Spedizioni sicure</h3>
-                        <p>Offriamo consegna rapida per  in perfette condizioni.</p>
+                        <p>Offriamo  arrivi slklkksd lskkldkklskdkllks kdklkllkeklioeoiwkeoio  a destinazione in perfette condizioni.</p>
                     </div>
                     <div class="service-card" style="border: 2px solid rgb(224, 228, 108); display: inline-block; padding: 5px; border-radius: 15px;">
+                        <i class="fas fa-medal"></i>
                         <h3>Materiali di qualità</h3>
-                        <p>Siamo impegnati a utilizzare garantirti un prodotto che duri nel tempo.</p>
+                        <p>Siamo impegnati a utilizzare  peluche, per garantirti un prodotto che duri nel tempo.</p>
                     </div>
                     <div class="service-card" style="border: 2px solid rgb(224, 228, 108); display: inline-block; padding: 5px; border-radius: 15px;">
+                   <i class="fas fa-crown"></i>
                         <h3>Servizio eccellente</h3>
-                        <p>La nostra missione è darti la risolvendo qualsiasi problema.</p>
+                        <p>La nostra missione è darti risolvendo qualsiasi problema.</p>
                     </div>
                     <div class="service-card" style="border: 2px solid rgb(224, 228, 108); display: inline-block; padding: 5px; border-radius: 15px;">
+                        <i class="fas fa-truck"></i>
                         <h3>Spedizioni sicure</h3>
-                        <p>Offriamo consegna rapida per garantirti destinazione in perfette condizioni.</p>
+                        <p>Offriamo  arrivi slklkksd lskkldkklskdkllks kdklkllkeklioeoiwkeoio  a destinazione in perfette condizioni.</p>
                     </div>
                     <div class="service-card" style="border: 2px solid rgb(224, 228, 108); display: inline-block; padding: 5px; border-radius: 15px;">
+                        <i class="fas fa-medal"></i>
                         <h3>Materiali di qualità</h3>
-                        <p>Siamo impegnati a utilizzare materiali  per garantirti un prodotto che duri nel tempo.</p>
+                        <p>Siamo impegnati a utilizzare  peluche, per garantirti un prodotto che duri nel tempo.</p>
                     </div>
                     <div class="service-card" style="border: 2px solid rgb(224, 228, 108); display: inline-block; padding: 5px; border-radius: 15px;">
+                   <i class="fas fa-crown"></i>
                         <h3>Servizio eccellente</h3>
-                        <p>La nostra missione è  risolvendo qualsiasi problema.</p>
+                        <p>La nostra missione è darti risolvendo qualsiasi problema.</p>
                     </div>
                 </div>
                 <div class="service-dots">
@@ -146,7 +195,7 @@
         </section>
     
     <section class="popular-plushies">
-        <h2 style="font-style: italic; font-weight: 100; border: 2px solid rgb(224, 228, 108); display: inline-block; padding: 5px; border-radius: 15px;"><img src="footerlogo.jpg" alt="teddy" style="width: 40px; height: 40px;" /> I Peluche Più Ricercation </h2>
+        <h2 style="font-style: italic; font-weight: 500; border: 2px solid rgb(224, 228, 108); display: inline-block; padding: 5px; border-radius: 15px;"><img src="footerlogo.jpg" alt="teddy" style="width: 40px; height: 40px;" /> I Peluche Più Ricercation </h2>
         <div class="product-list">
             <div class="product-card">
                 <img src="teddy.jpg" alt="Butterfly">
@@ -211,7 +260,7 @@
     </section>
     
     <section class="testimonials">
-        <h2 style="font-style: italic; font-weight: 100; border: 2px solid rgb(224, 228, 108); display: inline-block; padding: 5px; border-radius: 15px;">
+        <h2 style="font-style: italic; font-weight: 500; border: 2px solid rgb(224, 228, 108); display: inline-block; padding: 5px; border-radius: 15px;">
             <i class="fa fa-heart" style="color: rgb(141, 141, 231);"></i> Opinioni Dei Nostri Clienti
         </h2>        
                 <div class="testimonial-slider">
