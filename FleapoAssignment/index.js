@@ -58,8 +58,3 @@ function showServiceSlides(n) {
     slides[0].parentElement.style.transform = `translateX(${-(serviceSlideIndex - 1) * 100}%)`;
     dots[serviceSlideIndex - 1].className += " service-active";
 }
-
-
-
-
-
